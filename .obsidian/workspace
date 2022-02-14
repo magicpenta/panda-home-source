@@ -1,0 +1,101 @@
+{
+  "main": {
+    "id": "211d60ff71ac5cdc",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d6093233aea2822",
+        "type": "leaf",
+        "state": {
+          "type": "image",
+          "state": {
+            "file": "docs/flume/image/base.svg"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4d300a6a93b65e30",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e90ce2e741ef3f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2e76b6a0e30164c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "2a885dd6d76a90ae",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8b9751a43e966072",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd0d17e421b4a64e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61560b1dae3d0357",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/flume/image/base.svg",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "3d6093233aea2822",
+  "lastOpenFiles": [
+    "docs/flume/image/base.svg",
+    "src/pages/intro.md",
+    "docs/flume/index.md",
+    "docs/clickhouse/index.md",
+    "docs/spider/一个简易 Java 爬虫程序的实现.md",
+    "docs/spider/基于 HtmlParser 实现网页链接提取.md",
+    "docs/spider/页面解析详细指南.md",
+    "docs/spider/使用 HttpClient 实现页面源码下载.md",
+    "docs/spider/index.md",
+    "docs/flume/Flume ElasticSearch Sink.md"
+  ]
+}
