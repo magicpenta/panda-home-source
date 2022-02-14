@@ -1,0 +1,100 @@
+<mxfile host="65bd71144e" scale="2" border="30">
+    <diagram id="0QhtwqMjpmc_AO-MrRb4" name="第 1 页">
+        <mxGraphModel dx="1252" dy="719" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="1149" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Tahoma;fontColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=2;size=13;rounded=1;fillColor=#EDF2F4;" vertex="1" parent="1">
+                    <mxGeometry x="254.38" y="228" width="463.25" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="1150" value="&lt;font face=&quot;Tahoma&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 9px&quot;&gt;Partition 01&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1">
+                    <mxGeometry x="276.01" y="240.5" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1153" value="&lt;font face=&quot;Tahoma&quot; size=&quot;1&quot;&gt;&lt;b&gt;……&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1">
+                    <mxGeometry x="416.01" y="240.5" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1154" value="&lt;b style=&quot;font-family: &amp;#34;tahoma&amp;#34; ; font-size: 9px&quot;&gt;Partition&amp;nbsp;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1">
+                    <mxGeometry x="556.01" y="240.5" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1139" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="60" y="71" width="252" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="1135" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Tahoma;fontColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=2;size=13;rounded=1;fillColor=#EDF2F4;" vertex="1" parent="1139">
+                    <mxGeometry width="252" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="1136" value="&lt;font face=&quot;Tahoma&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 9px&quot;&gt;Partition 01&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1139">
+                    <mxGeometry x="21" y="12.5" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1137" value="&lt;font face=&quot;Tahoma&quot; size=&quot;1&quot;&gt;&lt;b&gt;……&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1139">
+                    <mxGeometry x="91" y="12.5" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1138" value="&lt;b style=&quot;font-family: &amp;#34;tahoma&amp;#34; ; font-size: 9px&quot;&gt;Partition &lt;i&gt;n&lt;/i&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1139">
+                    <mxGeometry x="161" y="12.5" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1141" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Tahoma;fontColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=2;size=13;rounded=1;fillColor=#EDF2F4;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="71" width="252" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="1156" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=oval;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="1142" target="1150">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1142" value="&lt;font face=&quot;Tahoma&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 9px&quot;&gt;Partition 01&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1">
+                    <mxGeometry x="381" y="83.5" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1159" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=oval;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="1143" target="1153">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1143" value="&lt;font face=&quot;Tahoma&quot; size=&quot;1&quot;&gt;&lt;b&gt;……&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1">
+                    <mxGeometry x="451" y="83.5" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1162" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=oval;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="1144" target="1154">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1144" value="&lt;b style=&quot;font-family: &amp;#34;tahoma&amp;#34; ; font-size: 9px&quot;&gt;Partition &lt;i&gt;n&lt;/i&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1">
+                    <mxGeometry x="521" y="83.5" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1145" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Tahoma;fontColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=2;size=13;rounded=1;fillColor=#EDF2F4;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="71" width="252" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="1157" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=oval;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="1146" target="1150">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1146" value="&lt;font face=&quot;Tahoma&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 9px&quot;&gt;Partition 01&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1">
+                    <mxGeometry x="681" y="83.5" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1160" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=oval;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="1147" target="1153">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1147" value="&lt;font face=&quot;Tahoma&quot; size=&quot;1&quot;&gt;&lt;b&gt;……&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1">
+                    <mxGeometry x="751" y="83.5" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1163" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=oval;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="1148" target="1154">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1148" value="&lt;b style=&quot;font-family: &amp;#34;tahoma&amp;#34; ; font-size: 9px&quot;&gt;Partition &lt;i&gt;n&lt;/i&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=11;fontColor=#345253;fillColor=#CAD9DF;" vertex="1" parent="1">
+                    <mxGeometry x="821" y="83.5" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1155" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=oval;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="1136" target="1150">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1158" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=oval;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="1137" target="1153">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1161" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=oval;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="1138" target="1154">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1164" value="&lt;font face=&quot;Tahoma&quot; color=&quot;#345253&quot;&gt;&lt;b&gt;Temp File 01&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="143" y="51" width="86" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="1165" value="&lt;font face=&quot;Tahoma&quot; color=&quot;#345253&quot;&gt;&lt;b&gt;Temp File 02&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="443.01" y="51" width="86" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="1166" value="&lt;font face=&quot;Tahoma&quot; color=&quot;#345253&quot;&gt;&lt;b&gt;Temp File 03&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="743" y="51" width="86" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="1167" value="&lt;font face=&quot;Tahoma&quot; color=&quot;#345253&quot;&gt;&lt;b&gt;Data File&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="443" y="283" width="86" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

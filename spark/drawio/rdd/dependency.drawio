@@ -1,0 +1,49 @@
+<mxfile host="65bd71144e" scale="2" border="30">
+    <diagram id="0QhtwqMjpmc_AO-MrRb4" name="第 1 页">
+        <mxGraphModel dx="1252" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="277" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=12;fontColor=#345253;strokeWidth=2;fillColor=#EDF2F4;strokeColor=none;arcSize=50;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="39.370000000000005" width="230" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="291" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="278" target="280">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="278" value="&lt;font color=&quot;#ffffff&quot; face=&quot;Helvetica&quot; style=&quot;line-height: 100%&quot;&gt;deps&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=12;fontColor=#345253;strokeWidth=2;fillColor=#345253;strokeColor=none;arcSize=50;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="49.370000000000005" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="279" value="&lt;font color=&quot;#345253&quot;&gt;MapPartitionsRDD&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="700" y="54.370000000000005" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="280" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=12;fontColor=#345253;strokeWidth=2;fillColor=#EDF2F4;strokeColor=none;arcSize=50;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="39.370000000000005" width="230" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="290" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="281" target="283">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="281" value="&lt;font color=&quot;#ffffff&quot; face=&quot;Helvetica&quot;&gt;rdd&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=12;fontColor=#345253;strokeWidth=2;fillColor=#345253;strokeColor=none;arcSize=50;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="49.370000000000005" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="282" value="&lt;span style=&quot;color: rgb(52 , 82 , 83)&quot;&gt;OneToOneDependency&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="440" y="54.370000000000005" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="283" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=12;fontColor=#345253;strokeWidth=2;fillColor=#EDF2F4;strokeColor=none;arcSize=50;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="39.37" width="230" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="292" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#999999;" edge="1" parent="1" source="284" target="288">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="284" value="&lt;font color=&quot;#ffffff&quot; face=&quot;Helvetica&quot; style=&quot;line-height: 100%&quot;&gt;deps&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=12;fontColor=#345253;strokeWidth=2;fillColor=#345253;strokeColor=none;arcSize=50;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="49.370000000000005" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="285" value="&lt;span style=&quot;color: rgb(52 , 82 , 83) ; text-align: center&quot;&gt;HadoopRDD&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="180" y="54.370000000000005" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="288" value="&lt;b&gt;&lt;i&gt;Nil&lt;/i&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=12;fontColor=#345253;strokeWidth=2;fillColor=#EDF2F4;strokeColor=none;arcSize=50;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="39.370000000000005" width="50" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
