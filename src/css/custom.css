@@ -92,10 +92,14 @@ img {
     margin-right: 100px;
 }
 
-.pagination-nav {
+nav[aria-label="Docs pages navigation"] {
 	margin-left: 50px;
 	margin-right: 100px;
     display: flex;
+}
+
+.pagination-nav {
+	margin-bottom: 25px;
 }
 
 .footer {

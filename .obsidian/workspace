@@ -4,14 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "3d6093233aea2822",
+        "id": "53c69b9f7283e728",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "docs/flume/image/base.svg"
+            "file": "blog/2016-10-01-my-way/index.md",
+            "mode": "source"
           }
-        }
+        },
+        "group": "0cf952eae50c245a"
+      },
+      {
+        "id": "34a6c82e40ca1fec",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "blog/2016-10-01-my-way/index.md",
+            "mode": "preview"
+          }
+        },
+        "group": "0cf952eae50c245a"
       }
     ],
     "direction": "vertical"
@@ -67,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/flume/image/base.svg",
+                "file": "blog/2016-10-01-my-way/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3d6093233aea2822",
+  "active": "34a6c82e40ca1fec",
   "lastOpenFiles": [
-    "docs/flume/image/base.svg",
-    "src/pages/intro.md",
-    "docs/flume/index.md",
-    "docs/clickhouse/index.md",
-    "docs/spider/一个简易 Java 爬虫程序的实现.md",
-    "docs/spider/基于 HtmlParser 实现网页链接提取.md",
-    "docs/spider/页面解析详细指南.md",
-    "docs/spider/使用 HttpClient 实现页面源码下载.md",
-    "docs/spider/index.md",
-    "docs/flume/Flume ElasticSearch Sink.md"
+    "blog/2016-10-01-my-way/index.md",
+    "blog/2022-02-15-docusaurus/index.md",
+    "blog/2021-10-08-scala-standard/index.md",
+    "blog/2020-07-01-sonarqube/index.md",
+    "blog/2021-06-15-jenkins/index.md",
+    "blog/2016-10-01-my-way/docusaurus-plushie-banner.jpeg",
+    "docs/spark/Spark 快速入门.md",
+    "docs/spark/index.md",
+    "blog/TEST.md",
+    "blog/TEST1.md"
   ]
 }

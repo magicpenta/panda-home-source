@@ -18,24 +18,6 @@ const config = {
   deploymentBranch: 'master',
 
   plugins: [
-    [
-      'content-docs',
-      {
-		id: 'flink',
-        path: 'flink',
-        routeBasePath: 'flink',
-        include: ['*.md', '*.mdx'],
-      },
-    ],
-	[
-      'content-docs',
-      {
-		id: 'spark',
-        path: 'spark',
-        routeBasePath: 'spark',
-        include: ['*.md', '*.mdx'],
-      },
-    ]
   ],
 
   presets: [
@@ -43,6 +25,9 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        blog: {
+          blogSidebarTitle: 'Recent Posts',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -53,11 +38,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-	  algolia: {
-        appId: 'X1Z85QJPUV',
-        apiKey: 'bf7211c161e8205da2f933a02534105a',
-        indexName: 'docusaurus-2',
-      },
       navbar: {
         title: 'Panda Home',
         logo: {
@@ -65,10 +45,9 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-		  {to: '/intro', label: 'Intro', position: 'left'},
-		  {to: '/spark/Spark 快速入门', label: 'Spark', position: 'left'},
-		  {to: '/flink/Flink 快速入门', label: 'Flink', position: 'left'},
-		  {to: '/docs/clickhouse', label: 'Docs', position: 'left'},
+		  {to: '/docs', label: 'Docs', position: 'left'},
+		  {to: '/blog', label: 'Blog', position: 'left'},
+		  {to: '/about', label: 'About', position: 'left'},
         ],
       },
       footer: {
@@ -79,16 +58,16 @@ const config = {
             items: [
               {
                 label: 'Spark',
-                to: '/spark/Spark 快速入门',
+                to: '/docs',
               },
 			  {
                 label: 'Flink',
-                to: '/flink/Flink 快速入门',
+                to: '/docs/flink',
               }
             ],
           },
           {
-            title: 'Docs',
+            title: 'Other',
             items: [
               {
                 label: 'ClickHouse',
@@ -110,7 +89,7 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/magicpenta',
-              }
+              },
             ],
           },
 		  {
@@ -127,6 +106,10 @@ const config = {
             ],
           },
         ],
+		logo: {
+          alt: 'Panda Logo',
+          src: 'img/bottom.png',
+        },
         copyright: `Copyright © ${new Date().getFullYear()} Panda's Home`,
       },
       prism: {

@@ -32,7 +32,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--info"
-            to="/intro">
+            to="/docs">
             登峰造极
           </Link>
         </div>
