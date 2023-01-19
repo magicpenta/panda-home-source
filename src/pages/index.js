@@ -12,28 +12,27 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">
-		  <img className="hero_logo" src="/img/sun.png" width="400" height="400"/>
 		  <p className="hero__title_content">
-		    <b>Panda</b> 的 <b>大数据</b> 之路
+		    <b>Panda</b> BigData Book
 		  </p>
 		</h1>
         <p className="hero__subtitle">
-		  岱宗夫如何？齐鲁青未了。
+		  Who has seen the wind? Neither I nor you.
 		</p>
 		<p className="hero__subtitle">
-		  造化钟神秀，阴阳割昏晓。
+		  But when the leaves hang trembling, The wind is passing through.
 		</p>
 		<p className="hero__subtitle">
-		  荡胸生曾云，决眦入归鸟。
+		  Who has seen the wind? Neither you nor I.
 		</p>
 		<p className="hero__subtitle">
-		  会当凌绝顶，一览众山小。
+		  But when the trees bow down their heads, The wind is passing by.
 		</p>
         <div className={styles.buttons}>
           <Link
             className="button button--info"
             to="/docs">
-            登峰造极
+            Get Started
           </Link>
         </div>
       </div>

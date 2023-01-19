@@ -588,14 +588,70 @@ if (!urlClassLoader.getURLs().contains(url)) {
 
 若 Task 为 ResultTask，则 `runTask` 主要做的事情为：
 
-- 反序列化字节数组 `taskBinary`，获得 RDD 实例
-- 调用 RDD 的 `iterator` 方法执行计算，并 **直接返回计算后的结果**
+- 反序列化字节数组 `taskBinary`，获得 RDD 实例和用户函数 `func`
+- 调用 RDD 的 `iterator` 方法获取迭代器，将其作为参数传入用户函数 `func` 执行计算，并 **直接返回计算后的结果**
 
-:::caution
+:::info
 
 `iterator` 方法最终实际上调用的便是 RDD 的 `compute` 方法，`compute` 方法的具体实现由子类决定。
 
 :::
+
+---
+
+**知识扩展：用户函数 `func` 与 RDD 的 `compute` 方法是什么关系？哪一个是计算逻辑的执行者？**
+
+用户函数 `func` 指的便是我们编写在算子中的计算逻辑，例如：
+
+```scala
+// 转换算子中的 func
+val wordMap: RDD[(String, Int)] = words.map(x => {
+  (x, 1)
+})
+
+// 行动算子中的 func
+rdd.foreach(x => {
+  println(new String(x.value(), StandardCharsets.UTF_8))
+})
+```
+
+直觉告诉我们，用户函数 `func` 会在 RDD 的 `compute` 方法中被调用，因此两者都可以算作计算逻辑的执行者，但实际上真的是如此吗？
+
+举例说明，如果仅看 MapPartitionsRDD 的 `compute` 方法，那么上面的结论是正确的：
+
+```scala
+override def compute(split: Partition, context: TaskContext): Iterator[U] =
+  f(context, split.index, firstParent[T].iterator(split, context))
+```
+
+但在 KafkaRDD 中（以 `0.8` 版本为例），这个结论却是错误的，我们在 `compute` 方法看不到用户函数 `func` 的身影，只能看到它返回了一个数据集的迭代器：
+
+```scala
+override def compute(thePart: Partition, context: TaskContext): Iterator[R] = {
+  val part = thePart.asInstanceOf[KafkaRDDPartition]
+  assert(part.fromOffset <= part.untilOffset, errBeginAfterEnd(part))
+  if (part.fromOffset == part.untilOffset) {
+    log.info(s"Beginning offset ${part.fromOffset} is the same as ending offset " +
+      s"skipping ${part.topic} ${part.partition}")
+    Iterator.empty
+  } else {
+    new KafkaRDDIterator(part, context)
+  }
+}
+```
+
+所以结论是，用户函数 `func` 是计算逻辑的执行者，而 RDD 的 `compute` 方法是否参与了计算的执行还需要看其子类的具体实现。但有一点是肯定的，对于 ResultTask 而言，用户函数 `func` 和 RDD 的 `compute` 方法共同完成了计算逻辑的执行：
+
+```scala
+override def runTask(context: TaskContext): U = {
+  // Deserialize the RDD and the func using the broadcast variables.
+  // ...
+  val (rdd, func) = ser.deserialize[(RDD[T], (TaskContext, Iterator[T]) => U)](
+    ByteBuffer.wrap(taskBinary.value), Thread.currentThread.getContextClassLoader)
+  // ...
+  func(context, rdd.iterator(partition, context))
+}
+```
 
 **STEP 03：处理计算结果**
 

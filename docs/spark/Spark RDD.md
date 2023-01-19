@@ -35,6 +35,12 @@ RDD，全称为 Resilient Distributed Dataset，翻译成中文叫做 **弹性�
 |partitioner|由子类实现（可选），可设置分区器对数据集进行分区（仅适用于 KV 类型的 RDD）|
 |getPreferredLocations|由子类实现（可选），可在分区计算时指定 **优先起始位置**，有助于“移动计算”的实现|
 
+:::caution
+
+compute 方法通常用于执行算子中用户编写的函数 func，但有时它又只返回了迭代器，并不执行计算，更多细节请见 《Spark 任务调度》中的内容。
+
+:::
+
 ## RDD 创建
 
 RDD 可以基于已存在的集合创建：
@@ -103,7 +109,7 @@ RDD 的实现类有很多，相应地，split 的计算规则也各不相同。�
 |**flatMap**(*func*)|与 map 相似，但每个输入元素都可以映射到 **0 或多个输出结果**|
 |**mapPartitions**(*func*)|与 map 相似，但是传递给函数 *func* 的是每个分区数据集对应的迭代器|
 |**distinct**(*func*)|对原数据集进行去重，并返回新的数据集|
-|**groupByKey**(*[numPartitions]*)|应用于 (K, V) 形式的数据集，返回一个新的 (K, Iterable\<V\>) 形式的数据集，可通过 *numPartitions* 指定新数据集的分区数|
+|**groupByKey**(*[numPartitions]*)|应用于 (K, V) 形式的数据集，返回一个新的 (K, Iterable<V\>) 形式的数据集，可通过 *numPartitions* 指定新数据集的分区数|
 |**reduceByKey**(*func*, *[numPartitions]*)|应用于 (K, V) 形式的数据集，返回一个新的 (K, V) 形式的数据集，新数据集中的 V 是原有数据集中每个 K 对应的 V 传递到 *func *中进行聚合后的结果|
 |**aggregateByKey**(*zeroValue*)(*seqOp*, *combOp*, *[numPartitions]*)|应用于 (K, V) 形式的数据集，返回一个新的 (K, U) 形式的数据集，新数据集中的 U  是原有数据集中每个 K 对应的 V 传递到 *seqOp* 与 *combOp* 的联合函数且与 *zeroValue* 聚合后的结果|
 |**sortByKey**(*[ascending]*, *[numPartitions]*)|应用于 (K, V) 形式的数据集，返回一个根据 K 排序的数据集，K 按升序或降序排序由  *ascending* 指定|
@@ -146,9 +152,7 @@ val agg: RDD[(String, Int)] = wordMap.aggregateByKey(2)(
 
 ### 行动算子
 
-行动算子（actions）不返回新的 RDD，但是它会 **触发计算任务的执行**。
-
-以 `collect()` 算子为例，当它执行后，会向 Spark 发起一个启动计算任务的指令：
+行动算子（actions）不返回新的 RDD，但是它会 **触发计算任务的执行**。以 `collect()` 算子为例，当它执行后，会向 Spark 发起一个启动计算任务的指令：
 
 ```scala
 def collect(): Array[T] = withScope {
@@ -230,7 +234,6 @@ private[spark] class MapPartitionsRDD[U: ClassTag, T: ClassTag](
 // 代码片段 5
 def this(@transient oneParent: RDD[_]) =
   this(oneParent.context, List(new OneToOneDependency(oneParent)))
-
 ```
 
 在这个创建 RDD 的方法中，具体会经历以下几个步骤：
@@ -365,7 +368,7 @@ Finished task 0.0 in stage 2.0 (TID 6). 1204 bytes result sent to driver
 - 无论缓存是否开启，基于 RDD B 拆解出的计算任务都会被重复调度
 - 基于 RDD B 拆解出的计算任务在重复发布到 Executor 执行时，会直接读取缓存中的计算结果，不会触发实际的计算
 
- 为了验证第二点的正确性，我们跟踪了 Executor 端执行任务的源码，具体过程如下图所示：
+为了验证第二点的正确性，我们跟踪了 Executor 端执行任务的源码，具体过程如下图所示：
 
 ![](image/cache.svg)
 

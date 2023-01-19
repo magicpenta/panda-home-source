@@ -172,9 +172,9 @@ UnsafeShuffleWriter 中有两个核心组件，分别为 ShuffleExternalSorter �
 
 |**变量名**|**变量类型**|**变量说明**|
 |---|---|---|
-|allocatedPages|LinkedList\<MemoryBlock\> |存储当前任务的所有 shuffle 内存页|
+|allocatedPages|LinkedList<MemoryBlock\> |存储当前任务的所有 shuffle 内存页|
 |currentPage|MemoryBlock|当前正在使用的内存页，输入的数据将优先写入到该内存页中|
-|spills|LinkedList\<SpillInfo\>|存储所有写出的临时文件的 SpillInfo 对象，该对象封装了临时文件的 File 对象及对应的 `blockId`|
+|spills|LinkedList<SpillInfo\>|存储所有写出的临时文件的 SpillInfo 对象，该对象封装了临时文件的 File 对象及对应的 `blockId`|
 
 ShuffleExternalSorter 包含的主要方法有：
 

@@ -4,29 +4,29 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: '聚焦',
+    title: 'Focus',
     Svg: require('../../static/img/rocket.svg').default,
     description: (
       <>
-        专注于大数据相关技术的学习
+        The content focus on big data, such as Spark, Flink, ClickHouse etc.
       </>
     ),
   },
   {
-    title: '原创',
+    title: '',
     Svg: require('../../static/img/satellite.svg').default,
     description: (
       <>
-        原创内容，统一的行文风格与样式
+        All content has been carefully typeset.
       </>
     ),
   },
   {
-    title: '共享',
+    title: 'Original',
     Svg: require('../../static/img/star.svg').default,
     description: (
       <>
-        所有内容开放共享，期待共同进步
+        The content is original or translated from official documents.
       </>
     ),
   },
