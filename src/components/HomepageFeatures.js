@@ -13,7 +13,7 @@ const FeatureList = [
     ),
   },
   {
-    title: '',
+    title: 'Grace',
     Svg: require('../../static/img/satellite.svg').default,
     description: (
       <>
